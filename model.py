@@ -9,7 +9,7 @@ from pyglet.graphics import TextureGroup
 from pyglet.window import key, mouse
 
 SECTOR_SIZE = 16
-TICKS_PER_SEC = 30
+TICKS_PER_SEC = 60
 
 def normalize(position):
     """ Accepts `position` of arbitrary precision and returns the block
@@ -103,7 +103,7 @@ class Model(object):
 
     def __init__(self):
         
-        TEXTURE_PATH = 'newtexture.png'
+        TEXTURE_PATH = 'texture.png'
 
         # A Batch is a collection of vertex lists for batched rendering.
         self.batch = pyglet.graphics.Batch()
